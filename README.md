@@ -67,7 +67,20 @@ In principle, the kernel should support ROCm systems as well, though it has not 
 
 ## Citing this work
 
-If you use the code associated with this package or otherwise find this work useful, please use GitHub's `Cite this repository` feature or refer to the Zenodo record linked in `CITATION.cff`.
+If you use the code associated with this package or otherwise find this work useful, please use GitHub's `Cite this repository` feature or the BibTeX below.
+
+```bibtex
+@software{Morehead_JVP_Flash_Attention_2025,
+author = {Morehead, Alex},
+doi = {10.5281/zenodo.17050188},
+license = {MIT},
+month = sep,
+title = {{JVP Flash Attention}},
+url = {https://github.com/amorehead/jvp_flash_attention},
+version = {0.0.1},
+year = {2025}
+}
+```
 
 ## Acknowledgements
 
