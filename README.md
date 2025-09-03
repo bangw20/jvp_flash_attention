@@ -65,6 +65,10 @@ python tests/test_jvp_attention.py --dtype {float16,bfloat16,float32}
 
 In principle, the kernel should support ROCm systems as well, though it has not yet been tested on them. macOS is currently unsupported.
 
+## Citing this work
+
+If you use the code associated with this package or otherwise find this work useful, please use GitHub's `Cite this repository` feature or refer to the Zenodo record linked in `CITATION.cff`.
+
 ## Acknowledgements
 
 `jvp_flash_attention` builds upon the contributions and insights from the following sources:
