@@ -24,6 +24,37 @@ pip install -e .
 pre-commit install
 ```
 
+## Usage
+
+Once installed, one can use `jvp_flash_attention` in place of PyTorch's `scaled_dot_product_attention` as follows.
+
+```python
+import torch.nn.functional as F
+
+from torch.nn.attention import SDPBackend, sdpa_kernel
+from jvp_flash_attention.jvp_attention import attention as jvp_attention
+
+with sdpa_kernel(SDPBackend.MATH):
+  # Regular attention
+  # x = F.scaled_dot_product_attention(
+  #     q,
+  #     k,
+  #     v,
+  #     attn_mask=attn_mask,
+  #     dropout_p=attn_dropout_p if self.training else 0.0,
+  # )
+
+  # Flash attention
+  x = jvp_attention(
+      q,
+      k,
+      v,
+      # attn_mask=attn_mask,  # NOTE: Attention masking is not yet supported
+  )
+```
+
+Contributions or enhancements are welcome!
+
 ## Tests
 
 If you want to run the unit tests verifying the correctness of the JVP Flash Attention Triton kernel, run the following command(s).
