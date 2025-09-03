@@ -71,14 +71,14 @@ If you use the code associated with this package or otherwise find this work use
 
 ```bibtex
 @software{Morehead_JVP_Flash_Attention_2025,
-author = {Morehead, Alex},
-doi = {10.5281/zenodo.17050188},
-license = {MIT},
-month = sep,
-title = {{JVP Flash Attention}},
-url = {https://github.com/amorehead/jvp_flash_attention},
-version = {0.0.1},
-year = {2025}
+  author = {Morehead, Alex},
+  doi = {10.5281/zenodo.17050188},
+  license = {MIT},
+  month = sep,
+  title = {{JVP Flash Attention}},
+  url = {https://github.com/amorehead/jvp_flash_attention},
+  version = {0.0.1},
+  year = {2025}
 }
 ```
 
