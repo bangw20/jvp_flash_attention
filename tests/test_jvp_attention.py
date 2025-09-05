@@ -53,8 +53,7 @@ def get_attention_flop_count(
     is_causal: bool,
     is_jvp: bool = False,
 ) -> int:
-    """
-    Calculate FLOPs for attention operations.
+    """Calculate FLOPs for attention operations.
 
     Args:
         batch_size: Batch size.
@@ -295,8 +294,7 @@ def loss_fn(out: Tensor, target: Tensor) -> Tensor:
 def make_qkv_with_grad(
     q_p: Tensor, k_p: Tensor, v_p: Tensor, q_t: Tensor, k_t: Tensor, v_t: Tensor
 ) -> QKV:
-    """
-    Make a QKV tuple with gradients enabled.
+    """Make a QKV tuple with gradients enabled.
 
     Args:
         q_p: The query projection tensor.
@@ -322,8 +320,7 @@ def make_qkv_with_grad(
 
 
 def make_qkv(q_p: Tensor, k_p: Tensor, v_p: Tensor, q_t: Tensor, k_t: Tensor, v_t: Tensor) -> QKV:
-    """
-    Make a QKV tuple from the given tensors with dual numbers.
+    """Make a QKV tuple from the given tensors with dual numbers.
 
     Args:
         q_p: The query projection tensor.
@@ -377,8 +374,7 @@ def make_qkv_unpacked(
 
 
 def compute_absolute_error(*tensors: Tensor) -> float:
-    """
-    Compute the maximum absolute pairwise error between all tensors.
+    """Compute the maximum absolute pairwise error between all tensors.
 
     Args:
         tensors: The input tensors to compare.
@@ -539,8 +535,7 @@ def validate_accuracy_and_gradients(
 
 
 def run_benchmark_suite(args: Args) -> list[BenchmarkResult]:
-    """
-    Run comprehensive benchmarks across different configurations.
+    """Run comprehensive benchmarks across different configurations.
 
     Args:
         args: The command-line arguments for the benchmark.
@@ -564,7 +559,8 @@ def run_benchmark_suite(args: Args) -> list[BenchmarkResult]:
     }
     tolerance = tolerance_map[args.dtype]
 
-    # NOTE: Length-32 sequences pose specific numerical accuracy challenges
+    # NOTE: Length-32 sequences pose specific numerical accuracy challenges, and for
+    # them you may need to disable Triton kernel autotuning to avoid CUDA indexing errors.
     grad_tolerance_map = {32: 7e-4}  # ...
     tangent_tolerance_map = {32: 1.6e-2}  # ...
 
@@ -710,8 +706,7 @@ def run_benchmark_suite(args: Args) -> list[BenchmarkResult]:
 
 
 def print_summary_table(results: list[BenchmarkResult]) -> None:
-    """
-    Print a summary table of benchmark results.
+    """Print a summary table of benchmark results.
 
     Args:
         results: The list of benchmark results to summarize.
